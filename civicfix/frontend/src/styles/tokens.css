@@ -1,0 +1,169 @@
+/* CivicFix 2.0 Complete Design Tokens (Light & Dark Theme) */
+:root {
+  /* Typography */
+  --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-display: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Type Scale */
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.85rem;
+  --fs-base: 0.9375rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.35rem;
+  --fs-xl: 1.85rem;
+
+  /* Sizing & Controls */
+  --control-h: 42px;
+  --topbar-h: 64px;
+  --sidebar-w: 260px;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Radii */
+  --r-xs: 4px;
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 16px;
+  --r-pill: 9999px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
+  --radius-full: 9999px;
+
+  /* Brand Colors (Emerald Green) */
+  --brand: #10b981;
+  --brand-hover: #059669;
+  --brand-active: #047857;
+  --brand-on: #ffffff;
+  --brand-ink: #065f46;
+  --brand-soft: rgba(16, 185, 129, 0.12);
+  --brand-ring: rgba(16, 185, 129, 0.25);
+  --brand-subtle: #ecfdf5;
+  --brand-line: #a7f3d0;
+
+  /* Deep Navy Enterprise Sidebar */
+  --sidebar-bg: #0f172a;
+  --sidebar-border: #1e293b;
+  --sidebar-text: #94a3b8;
+  --sidebar-text-active: #ffffff;
+  --sidebar-item-hover: #1e293b;
+  --sidebar-item-active: #1e293b;
+
+  /* Light Theme Surfaces & Lines */
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --surface-2: #f1f5f9;
+  --surface-raised: #ffffff;
+  --surface-hover: #f1f5f9;
+  --sunken: #f1f5f9;
+  --line: #e2e8f0;
+  --line-strong: #cbd5e1;
+
+  /* Text & Inks */
+  --ink: #0f172a;
+  --ink-2: #334155;
+  --ink-secondary: #334155;
+  --muted: #64748b;
+  --muted-light: #94a3b8;
+  --faint: #94a3b8;
+
+  /* Marker Brand */
+  --marker: #0f172a;
+  --marker-ink: #ffffff;
+
+  /* Semantic Alerts */
+  --danger-fg: #ef4444;
+  --danger-bg: #fef2f2;
+  --danger-line: #fecaca;
+  --success-fg: #10b981;
+  --success-bg: #ecfdf5;
+  --success-line: #a7f3d0;
+
+  /* Priority Tokens */
+  --pri-urgent: #ef4444;
+  --pri-high: #f97316;
+  --pri-medium: #3b82f6;
+  --pri-low: #64748b;
+
+  /* Status Colors */
+  --st-submitted-bg: #fff7ed;
+  --st-submitted-fg: #ea580c;
+  --st-assigned-bg: #eff6ff;
+  --st-assigned-fg: #2563eb;
+  --st-in_progress-bg: #f5f3ff;
+  --st-in_progress-fg: #7c3aed;
+  --st-resolved-bg: #ecfdf5;
+  --st-resolved-fg: #059669;
+  --st-rejected-bg: #fef2f2;
+  --st-rejected-fg: #dc2626;
+
+  /* Elevation Shadows */
+  --sh-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --sh-1: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --sh-2: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --sh-3: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --sh-lg: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+/* ===== Dark Theme ===== */
+[data-theme="dark"] {
+  --bg: #0b1120;
+  --surface: #0f172a;
+  --surface-2: #1e293b;
+  --surface-raised: #1e293b;
+  --surface-hover: #1e293b;
+  --sunken: #070d18;
+  --line: #1e293b;
+  --line-strong: #334155;
+
+  --sidebar-bg: #070d18;
+  --sidebar-border: #1e293b;
+  --sidebar-text: #94a3b8;
+  --sidebar-text-active: #ffffff;
+  --sidebar-item-hover: #0f172a;
+  --sidebar-item-active: #1e293b;
+
+  --brand: #10b981;
+  --brand-hover: #34d399;
+  --brand-on: #ffffff;
+  --brand-ink: #6ee7b7;
+  --brand-soft: rgba(16, 185, 129, 0.18);
+  --brand-ring: rgba(16, 185, 129, 0.35);
+  --brand-subtle: rgba(16, 185, 129, 0.12);
+  --brand-line: rgba(16, 185, 129, 0.3);
+
+  --ink: #f8fafc;
+  --ink-2: #cbd5e1;
+  --ink-secondary: #cbd5e1;
+  --muted: #94a3b8;
+  --muted-light: #64748b;
+  --faint: #64748b;
+
+  --marker: #334155;
+  --marker-ink: #ffffff;
+
+  --danger-bg: rgba(239, 68, 68, 0.15);
+  --danger-fg: #f87171;
+  --danger-line: rgba(239, 68, 68, 0.3);
+
+  --success-bg: rgba(16, 185, 129, 0.15);
+  --success-fg: #34d399;
+  --success-line: rgba(16, 185, 129, 0.3);
+
+  --st-submitted-bg: rgba(249, 115, 22, 0.15);
+  --st-submitted-fg: #fb923c;
+  --st-assigned-bg: rgba(59, 130, 246, 0.15);
+  --st-assigned-fg: #60a5fa;
+  --st-in_progress-bg: rgba(139, 92, 246, 0.15);
+  --st-in_progress-fg: #c084fc;
+  --st-resolved-bg: rgba(16, 185, 129, 0.15);
+  --st-resolved-fg: #34d399;
+  --st-rejected-bg: rgba(239, 68, 68, 0.15);
+  --st-rejected-fg: #f87171;
+
+  --sh-sm: 0 1px 2px 0 rgb(0 0 0 / 0.5);
+  --sh-1: 0 1px 3px 0 rgb(0 0 0 / 0.4);
+  --sh-2: 0 4px 6px -1px rgb(0 0 0 / 0.4);
+  --sh-3: 0 10px 15px -3px rgb(0 0 0 / 0.5);
+}
